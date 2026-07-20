@@ -1,28 +1,26 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import Navbar from "./components/NavBar/Navbar";
-import Home from "./pages/Home/Home";
-import Products from "./pages/Product/Product";
-import ProductDetails from "./pages/Product/ProductDetails";
-import About from "./pages/About/About";
-import Contact from "./pages/Contact/Contact";
-import Blog from "./pages/Blog/Blog";
-import FAQ from "./pages/FAQ/FAQ";
+import Hero from "./components/home/Hero";
+import GoldenSparkles from "./components/ui/GoldenSparkles";
+import Stats from "./components/home/Stats";
+import FeaturedDishes from "./components/home/FeaturedDishes";
+import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 
 function App() {
   return (
-    <BrowserRouter>
-        <Navbar/>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:id" element={<ProductDetails />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/faq" element={<FAQ />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+    <GoldenSparkles/>
+      <Navbar />
+
+      {/* Main content starts below the fixed navbar */}
+      <main className="relative">
+        <Hero />
+        <Stats />
+        <FeaturedDishes />
+        <WhyChooseUs/>
+      </main>
+    </>
   );
 }
 

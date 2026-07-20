@@ -1,104 +1,46 @@
-import ricecereal from "../assets/images/categories/rice-cereals.png";
-import bananapuree from "../assets/images/categories/bananapuree.png";
-import mangopuree from "../assets/images/categories/mangopuree.png";
-import oatmealcereal from "../assets/images/categories/oat-meal.png";
-import carriot from "../assets/images/categories/carriot-puree.png";
-import pear from "../assets/images/categories/pear-puree.png";
-import ricechicken from "../assets/images/categories/ricenchicken-puree.png"
-import pumpkin from "../assets/images/categories/pumpkin-puree.png";
-import vegetable from "../assets/images/categories/vegetable-puree.png";
-
 const categories = [
   {
     id: 1,
-    title: "Organic Rice Cereal",
-    image: ricecereal,
-    age: "6+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A smooth, iron-fortified organic rice cereal specially crafted for babies starting their solid food journey. Gentle on tiny tummies and made with carefully selected natural ingredients."
+    title: "Rice Dishes",
+    description: "Delicious Nigerian rice meals prepared with rich flavors and the freshest ingredients.",
+    image: "/images/categories/jollof-rice.jpg",
+    meals: "18 Meals",
   },
   {
     id: 2,
-    title: "Oatmeal Baby Cereal",
-    image: oatmealcereal,
-    age: "6+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "Creamy whole-grain oatmeal cereal packed with fiber, essential vitamins, and minerals to support healthy growth, energy, and digestion for growing babies."
+    title: "Soups & Swallows",
+    description: "Authentic Nigerian soups served with your favorite swallow.",
+    image: "/images/categories/egusi-soup.jpg",
+    meals: "24 Meals",
   },
   {
     id: 3,
-    title: "Apple & Banana Puree",
-    image: bananapuree,
-    age: "6+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A naturally sweet blend of ripe apples and bananas, prepared without added sugar or preservatives to introduce delicious fruit flavors to your little one."
+    title: "Grills & Barbecue",
+    description: "Perfectly grilled chicken, fish, turkey, goat meat, and spicy suya.",
+    image: "/images/categories/grilled-chicken.jpg",
+    meals: "15 Meals",
   },
   {
     id: 4,
-    title: "Mango Puree",
-    image: mangopuree,
-    age: "6+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "Made from juicy, sun-ripened mangoes, this silky puree is rich in Vitamin A and Vitamin C, providing a refreshing and nutritious fruit meal for babies."
+    title: "Nigerian Specials",
+    description: "Traditional dishes made from time-honored family recipes.",
+    image: "/images/categories/ofada-rice.jpg",
+    meals: "12 Meals",
   },
   {
     id: 5,
-    title: "Pear & Peach Puree",
-    image: pear,
-    age: "6+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A delicate combination of sweet pears and juicy peaches blended into a smooth puree that delivers natural goodness and a delightful fruity taste."
+    title: "Breakfast & Street Foods",
+    description: "Enjoy Nigerian breakfast favorites and popular street snacks.",
+    image: "/images/categories/yam-and-egg.jpg",
+    meals: "16 Meals",
   },
   {
     id: 6,
-    title: "Carrot & Sweet Potato Mash",
-    image: carriot,
-    age: "7+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A wholesome vegetable mash made from fresh carrots and sweet potatoes, naturally rich in beta-carotene, vitamins, and essential nutrients for healthy development."
+    title: "Drinks & Beverages",
+    description: "Refreshing local drinks, smoothies, juices, and soft drinks.",
+    image: "/images/categories/zobo.jpg",
+    meals: "20 Drinks",
   },
-  {
-    id: 7,
-    title: "Pumpkin & Carrot Puree",
-    image: pumpkin,
-    age: "9+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A creamy blend of pumpkin and carrots offering a naturally sweet flavor while providing vitamins, antioxidants, and fiber to support your baby's healthy growth."
-  },
-  {
-    id: 8,
-    title: "Mixed Vegetable Puree",
-    image: vegetable,
-    age: "7+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A balanced blend of carefully selected vegetables including carrots, peas, broccoli, and pumpkin, providing a variety of nutrients in every spoonful."
-  },
-  {
-    id: 9,
-    title: "Chicken & Rice Meal",
-    image: ricechicken,
-    age: "8+ Months",
-    category: "Baby Cereals",
-    badge: "Organic",
-    description:
-      "A hearty complete meal featuring tender chicken, soft rice, and nutritious vegetables blended into a smooth texture that delivers protein and balanced nutrition."
-  }
 ];
 
 export default categories;

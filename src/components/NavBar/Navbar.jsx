@@ -1,14 +1,30 @@
+import logo from "../../assets/images/logo/otastylogo.jpg";
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
+import { Link, NavLink } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  FaBars,
+  FaTimes,
+  FaSearch,
+  FaPhoneAlt,
+} from "react-icons/fa";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "Menu", path: "/menu" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "About", path: "/about" },
+  { name: "Reservation", path: "/reservation" },
+  { name: "Contact", path: "/contact" },
+];
+
+export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 30);
+      setScrolled(window.scrollY > 40);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,110 +32,121 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { name: "Home", path: "/" },
-    { name: "Products", path: "/products" },
-    { name: "About", path: "/about" },
-    { name: "Blog", path: "/blog" },
-    { name: "FAQ", path: "/faq" },
-    { name: "Contact", path: "/contact" },
-  ];
-
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-md"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-10 h-20">
-        {/* Logo */}
-        <NavLink to="/" className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-full bg-amber-400 flex items-center justify-center text-white font-bold text-xl">
-            🌱
+    < >
+     <motion.header
+       initial={{ y: -120 }}
+       animate={{ y: 0 }}
+       transition={{ duration: 0.7 }}
+       className="sticky top-10 z-[100] w-full py-5"
+     >
+       <div className="mx-auto flex justify-center px-4">
+         <div
+           className={`w-full max-w-7xl rounded-full border border-white/10 transition-all duration-500 ${
+             scrolled
+               ? "bg-none backdrop-blur-xl shadow-2xl"
+               : "bg-none backdrop-blur-lg"
+           }`}
+         >
+            <div className="grid h-20 grid-cols-[1fr_2fr_1fr] items-center px-6 lg:px-8">
+              {/* Logo */}
+              <div className="flex justify-center items-center">
+                <Link to="/" className="flex items-center">
+                  <img
+                    src={logo}
+                    alt="OTasty Restaurants & Bar"
+                    className="h-14 w-14 rounded-full object-cover border-2 border-orange-500"
+                  />
+                </Link>
+              </div>
+
+              {/* Desktop Navigation */}
+              <nav className="hidden lg:flex items-center gap-8">
+
+                {navItems.map((item) => (
+                  <NavLink
+                    key={item.name}
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `transition font-medium ${
+                        isActive
+                          ? "text-orange-400"
+                          : "text-white hover:text-orange-400"
+                      }`
+                    }
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+
+              </nav>
+
+              {/* Right Side */}
+              <div className="hidden lg:flex items-center gap-3">
+
+                <button className="flex h-[50px] w-[80px] items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-orange-500">
+                  <FaSearch />
+                </button>
+
+                <a
+                  href="tel:07033132382"
+                  className="flex items-center justify-center h-[50px] w-[130px] gap-2 rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-6 py-3 font-semibold text-white transition hover:scale-105"
+                >
+                  <FaPhoneAlt />
+                  Call Now
+                </a>
+
+              </div>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setMobileOpen(!mobileOpen)}
+                className="text-xl flex justify-end items-end text-white lg:hidden"
+              >
+                {mobileOpen ? <FaTimes /> : <FaBars />}
+              </button>
+
+            </div>
           </div>
 
-          <div>
-            <h2 className="font-bold text-xl text-gray-800">
-              Little Sprouts
-            </h2>
-
-            <p className="text-xs text-gray-500">
-              Baby Nutrition
-            </p>
-          </div>
-        </NavLink>
-
-        {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8">
-          {links.map((link) => (
-            <NavLink
-              key={link.name}
-              to={link.path}
-              className={({ isActive }) =>
-                `font-medium transition ${
-                  isActive
-                    ? "text-amber-500"
-                    : "text-gray-700 hover:text-amber-500"
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </nav>
-
-        {/* Contact Button */}
-        <div className="hidden lg:block">
-          <NavLink
-            to="/contact"
-            className="bg-amber-400 hover:bg-amber-500 text-white px-6 py-3 rounded-full transition"
-          >
-            Get in Touch
-          </NavLink>
         </div>
-
-        {/* Mobile Button */}
-        <button
-          className="lg:hidden text-3xl text-gray-700"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <HiX /> : <HiMenuAlt3 />}
-        </button>
-      </div>
+      </motion.header>
 
       {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="lg:hidden bg-white shadow-lg px-6 py-6">
-          <div className="flex flex-col gap-5">
-            {links.map((link) => (
-              <NavLink
-                key={link.name}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-amber-500 font-semibold"
-                    : "text-gray-700"
-                }
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, x: "100%" }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: "100%" }}
+            transition={{ duration: 0.35 }}
+            className="fixed inset-0 top-15 z-[99] bg-black/95 backdrop-blur-xl lg:hidden"
+          >
+            <div className="flex h-full flex-col items-center justify-center gap-10">
+
+              {navItems.map((item) => (
+                <NavLink
+                  key={item.name}
+                  to={item.path}
+                  onClick={() => setMobileOpen(false)}
+                  className="text-xl font-semibold text-white transition hover:text-orange-400"
+                >
+                  {item.name}
+                </NavLink>
+              ))}
+
+              <a
+                href="tel:07033132382"
+                className="mt-6 flex items-center justify-center h-[50px] w-[130px] gap-3 rounded-full bg-gradient-to-r from-orange-500 to-red-600 px-8 py-4 text-white font-semibold"
               >
-                {link.name}
-              </NavLink>
-            ))}
+                <FaPhoneAlt />
+                Call Now
+              </a>
 
-            <NavLink
-              to="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="bg-amber-400 text-white py-3 rounded-full text-center"
-            >
-              Get in Touch
-            </NavLink>
-          </div>
-        </div>
-      )}
-    </header>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
-};
-
-export default Navbar;
+}

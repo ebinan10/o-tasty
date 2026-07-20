@@ -1,29 +1,103 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
+/* Google Fonts */
+
+/* Theme Variables */
+:root{
+    --primary:#C1121F;
+    --gold:#F4A261;
+    --cream:#FFF8F0;
+    --dark:#0E0E0E;
+    --surface:#181818;
 }
 
-body {
-  margin: 0;
-  background: #FFFDF8;
-  color: #374151;
-  font-family: "Poppins", sans-serif;
+/* Global Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-* {
-  box-sizing: border-box;
+html{
+    scroll-behavior:smooth;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
+body{
+
+    background:var(--dark);
+
+    color:white;
+
+    font-family:"Inter",sans-serif;
+
+    overflow-x:hidden;
+
+
 }
 
-::-webkit-scrollbar-thumb {
-  background: #F59E0B;
-  border-radius: 999px;
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
 }
 
-::-webkit-scrollbar-track {
-  background: #F8F8F8;
+/* Beautiful Scrollbar */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+        var(--primary),
+        var(--gold)
+    );
+
+    border-radius:50px;
+
+}
+
+/* Reusable Utility Classes */
+
+.heading-font{
+
+    font-family:"Playfair Display",serif;
+
+}
+
+.button-font{
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+/* Glass Effect */
+
+.glass{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+/* Premium Shadow */
+
+.shadow-glow{
+
+    box-shadow:0 20px 80px rgba(244,162,97,.25);
+
 }
