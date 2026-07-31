@@ -6,7 +6,7 @@ import {
   FaClock,
   FaArrowUp,
 } from "react-icons/fa6";
-
+import logo from "../../assets/images/logo/logo.png"
 import footerData from "./footerData";
 
 const Footer = () => {
@@ -37,17 +37,16 @@ const Footer = () => {
             viewport={{ once: true }}
             className="flex flex-col items-center justify-center"
           >
-            <img
-              src="/logo.png"
-              alt="Otasty"
-              className="w-28 mb-6"
-            />
+            <h3 className="text-white text-2xl font-bold mb-8">
+                          O-Tasty
+                        </h3>
 
             <p className="text-gray-400 leading-8">
               {footerData.description}
             </p>
 
             <div className="flex gap-4 mt-8">
+
 
               {footerData.socials.map((social, index) => {
                 const Icon = social.icon;
@@ -74,9 +73,9 @@ const Footer = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }} className = " flex flex-col items-center justify-start"
           >
-            <h3 className="text-white text-2xl font-bold mb-8">
-              Quick Links
-            </h3>
+          <h3 className="text-white text-2xl font-bold mb-8">
+                        Quick Links
+                      </h3>
 
             <ul className="space-y-4">
 
@@ -137,25 +136,25 @@ const Footer = () => {
               <div className="flex gap-4">
                 <FaLocationDot className="text-orange-500 mt-1" />
                 <p className="text-gray-400">
-                  152 Ikorodu Road,
+                  No 2 Scott Road,
                   <br />
-                  Agric Bus Stop,
+                  Ogarefe Ogara,
                   <br />
-                  Lagos.
+                  Delta State.
                 </p>
               </div>
 
               <div className="flex gap-4">
                 <FaPhone className="text-orange-500 mt-1" />
                 <p className="text-gray-400">
-                  +234 802 591 3457
+                  +234 7033132382
                 </p>
               </div>
 
               <div className="flex gap-4">
                 <FaEnvelope className="text-orange-500 mt-1" />
                 <p className="text-gray-400">
-                  info@otasty.com
+                  otasty2026@gmail.com
                 </p>
               </div>
 
@@ -171,13 +170,15 @@ const Footer = () => {
             </div>
 
           </motion.div>
-
+           <div className="h-[10px]"></div>
         </div>
+         <div className="w-full flex items-center justify-center">
+             <img  src={logo}  alt="Otasty" className="w-28 mb-6"/></div>
         <div className="h-[40px]"></div>
 
         {/* Divider */}
 
-        <div className=" h-[20vh] border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-evenly items-center gap-5">
+        <div className=" h-[20vh] border-t border-white/10 mt-20 pt-8 flex flex-col md:flex-row justify-center items-center gap-5">
 
           <p className="text-gray-500 text-center">
             © {new Date().getFullYear()} Otasty Restaurant & Bar. All Rights Reserved.

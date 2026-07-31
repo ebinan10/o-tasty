@@ -8,7 +8,7 @@ const Contact = () => {
     <section className="relative w-full flex items-center justify-center py-28 bg-[#0D0D0D] overflow-hidden">
 
       {/* Background Glow */}
-      <div className="absolute -top-32 -left-32 w-80 h-80 bg-orange-500/10 rounded-full blur-[150px]" />
+     <div className="absolute -top-32 -left-32 w-80 h-80 bg-orange-500/10 rounded-full blur-[150px]" />
       <div className="absolute -bottom-32 right-0 w-96 h-96 bg-orange-400/10 rounded-full blur-[170px]" />
 
       <div className="relative w-[90%] max-w-7xl mx-auto px-6 lg:px-10">
@@ -35,8 +35,8 @@ const Contact = () => {
             have a question, we'd love to hear from you.
           </p>
 
-          <div className="w-28 h-1 bg-orange-500 rounded-full mx-auto mt-8"></div>
-          <div className="w-12 h-1 bg-white rounded-full mx-auto mt-3"></div>
+           <div className="w-full h-1 bg-orange-500 rounded-full mx-auto mt-8"></div>
+           <div className="w-full h-1 bg-white rounded-full mx-auto mt-3"></div>
         </motion.div>
 
         {/* Contact Form + Contact Information */}
@@ -48,7 +48,7 @@ const Contact = () => {
           <ContactInfo data={contactData} />
 
         </div>
-        <div className="h-[60px]"></div>
+        <div className="md:h-[60px]"></div>
 
         {/* ================= MAP SECTION ================= */}
 
@@ -63,7 +63,7 @@ const Contact = () => {
 
             {/* Overlay Card */}
 
-            <div className="w-[22vw] h-[40vh] absolute top-8 left-8 z-20 bg-black/75 flex flex-col items-center justify-center backdrop-blur-md rounded-3xl p-8 max-w-sm">
+            <div className="md:w-[400px] md:h-[400px] w-[250px] h-[250px] absolute top-7 left-8 z-20 bg-black/75 flex flex-col items-center justify-center backdrop-blur-md rounded-3xl p-8 max-w-sm">
 
               <span className="uppercase tracking-[4px] text-orange-500 font-semibold">
                 Visit Otasty

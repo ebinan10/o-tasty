@@ -40,7 +40,7 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: .8 }}
-      className="bg-[#171717] w-full h-[105vh] flex flex-col items-center justify-center rounded-[35px] p-10 border border-white/10"
+      className="bg-[#171717] w-full lg:h-[105vh] h-[70vh] flex flex-col items-center justify-center rounded-[35px] p-10 border border-white/10"
     >
 
       <div className="flex flex-col  w-[90%] h-full gap-6 justify-evenly">
