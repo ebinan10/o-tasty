@@ -122,7 +122,7 @@ const WhyChooseUs = () => {
               <FaArrowRight />
             </motion.button>
           </motion.div>
-        <div className="h-[60px]"></div>
+        <div className="h-[10px]"></div>
         </div>
 
       </div>

@@ -4,7 +4,7 @@ import dishes from "../../data/featuredDishes";
 
 export default function FeaturedDishes() {
   return (
-    <section className="relative w-full flex justify-center p-[100px] bg-[#0D0D0D] py-28">
+    <section className="relative w-full flex justify-center p-[100px] bg-[#0D0D0D] py-28 overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 

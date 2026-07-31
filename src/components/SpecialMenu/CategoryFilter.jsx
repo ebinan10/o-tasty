@@ -17,7 +17,7 @@ const CategoryFilter = ({ activeCategory, setActiveCategory }) => {
           whileTap={{ scale: 0.95 }}
           whileHover={{ y: -3 }}
           onClick={() => setActiveCategory(category)}
-          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border
+          className={`px-6 py-3 h-[50px] w-[100Px] flex items-center justify-center rounded-full font-semibold transition-all duration-300 border
 
           ${
             activeCategory === category

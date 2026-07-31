@@ -17,12 +17,12 @@ const MenuCard = ({ item }) => {
         />
 
         {/* Category */}
-        <span className="absolute top-5 left-5 bg-[#D4AF37] text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+        <span className="absolute h-[40px] w-[80px] flex items-center justify-center top-5 left-5 bg-[#D4AF37] text-black px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
           {item.category}
         </span>
 
         {/* Rating */}
-        <div className="absolute top-5 right-5 flex items-center gap-2 bg-black/70 px-3 py-2 rounded-full backdrop-blur-sm">
+        <div className="absolute h-[40px] w-[80px] flex items-center justify-center top-5 right-5 flex items-center gap-2 bg-black/70 px-3 py-2 rounded-full backdrop-blur-sm">
           <FaStar className="text-yellow-400" />
           <span className="text-white font-semibold">
             {item.rating}
@@ -31,8 +31,8 @@ const MenuCard = ({ item }) => {
       </div>
 
       {/* Content */}
-      <div className="p-7">
-
+      <div className="p-7 h-[30vh] w-full flex flex-col items-center justify-center">
+        <div className="h-full w-[90%] flex flex-col items-start justify-evenly">
         <h3 className="text-white text-2xl font-bold mb-3">
           {item.name}
         </h3>
@@ -41,7 +41,7 @@ const MenuCard = ({ item }) => {
           {item.description}
         </p>
 
-        <div className="flex items-center justify-between">
+        <div className="w-full flex items-center justify-between">
 
           <h2 className="text-[#D4AF37] text-3xl font-black">
             {item.price}
@@ -54,7 +54,7 @@ const MenuCard = ({ item }) => {
             View Details
             <FaArrowRight />
           </motion.button>
-
+            </div>
         </div>
 
       </div>

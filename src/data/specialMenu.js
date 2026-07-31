@@ -1,15 +1,15 @@
-import jollof from "../assets/images/jollof-rice.jpg";
-import nativeRice from "../assets/images/native-rice.jpg";
-import coconutRice from "../assets/images/coconut-rice-fried-turkey.jpg";
-import concoctionRice from "../assets/images/concoction-rice.jpg";
-import bangaRice from "../assets/images/banga-rice.jpg";
-import pepperSoup from "../assets/images/goat-pepper-soup.jpg";
-import bangaSoup from "../assets/images/banga-catfish.jpg";
-import egusi from "../assets/images/egusi-pounded-yam.jpg";
-import grilledFish from "../assets/images/grilled-fish.jpg";
-import asun from "../assets/images/asun.jpg";
-import suya from "../assets/images/suya-platter.jpg";
-import chapman from "../assets/images/chapman.jpg";
+import jollof from "../assets/images/menu/jollof.png";
+import nativeRice from "../assets/images/menu/native-rice.png";
+import coconutRice from "../assets/images/menu/coconut-rice.png";
+import concoctionRice from "../assets/images/menu/native-rice.png";
+import bangaRice from "../assets/images/menu/native-rice.png";
+import pepperSoup from "../assets/images/menu/pepper-soup.png";
+import bangaSoup from "../assets/images/menu/banga.png";
+import egusi from "../assets/images/menu/egusi.png";
+import grilledFish from "../assets/images/menu/grilledfish.png";
+import asun from "../assets/images/menu/asun.png";
+import suya from "../assets/images/menu/suya.png";
+import chapman from "../assets/images/menu/champman.png";
 
 const specialMenu = [
   {

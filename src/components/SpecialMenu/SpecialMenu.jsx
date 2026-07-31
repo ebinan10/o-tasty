@@ -17,9 +17,9 @@ const SpecialMenu = () => {
   }, [activeCategory]);
 
   return (
-    <section className="py-28 bg-[#0D0D0D]">
+    <section className="w-full flex items-center justify-center py-28 bg-[#0D0D0D] overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="max-w-7xl w-full flex flex-col items-center mx-auto px-6 lg:px-10">
 
         {/* Heading */}
 
@@ -28,8 +28,10 @@ const SpecialMenu = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .7 }}
           viewport={{ once: true }}
-          className="text-center mb-14"
+          className="w-full text-center flex flex-col items-center justify-center mb-14 h-[35vh]"
         >
+        <div className="w-[90%] h-full flex xl:items-center items-start
+         justify-evenly flex-col ">
           <span className="uppercase tracking-[6px] text-[#D4AF37] font-semibold">
             Our Special Menu
           </span>
@@ -43,6 +45,8 @@ const SpecialMenu = () => {
             every dish is carefully crafted with fresh ingredients and authentic
             flavors to deliver an unforgettable dining experience.
           </p>
+          </div>
+
         </motion.div>
 
         <CategoryFilter
@@ -50,11 +54,12 @@ const SpecialMenu = () => {
           setActiveCategory={setActiveCategory}
         />
 
+        <div className="h-[70px]"></div>
         {/* Menu Grid */}
 
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
+          className="w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10"
         >
           {filteredMenu.map((item) => (
             <MenuCard
@@ -63,7 +68,6 @@ const SpecialMenu = () => {
             />
           ))}
         </motion.div>
-
       </div>
 
     </section>
