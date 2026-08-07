@@ -7,7 +7,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import restaurantImg from "../../assets/images/whychooseus/restaurant-interior.png";
+import restaurantImg from "../../assets/images/whychooseus/restaurant-interior.jpg";
 
 const features = [
   {

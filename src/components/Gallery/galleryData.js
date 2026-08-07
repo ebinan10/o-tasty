@@ -1,12 +1,12 @@
-import interior from "../../assets/images/whychooseus/restaurant-interior.png";
-import chef from "../../assets/images/menu/cooking-chef.png";
-import jollof from "../../assets/images/menu/jollof.png";
-import grilledFish from "../../assets/images/menu/grilledfish.png";
-import egusi from "../../assets/images/menu/egusi.png";
-import asun from "../../assets/images/menu/asun.png";
-import suya from "../../assets/images/menu/suya.png";
-import chapman from "../../assets/images/menu/champman.png";
-import customers from "../../assets/images/menu/happy-customer.png";
+import interior from "../../assets/images/whychooseus/restaurant-interior.jpg"
+import chef from "../../assets/images/menu/cooking-chef.jpg";
+import jollof from "../../assets/images/menu/jollof.jpg";
+import grilledFish from "../../assets/images/menu/grilledfish.jpg";
+import egusi from "../../assets/images/menu/egusi.jpg";
+import asun from "../../assets/images/menu/asun.jpg";
+import suya from "../../assets/images/menu/suya.jpg";
+import chapman from "../../assets/images/menu/champman.jpg";
+import customers from "../../assets/images/menu/happy-customer.jpg";
 
 const galleryData = [
   {

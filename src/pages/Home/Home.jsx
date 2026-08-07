@@ -11,7 +11,7 @@ import SpecialMenu from "../../components/SpecialMenu/SpecialMenu";
 import Testimonials from "../../components/testimonials/Testimonials";
 import Reservation from "../../components/Reservation/Reservation";
 import Gallery from "../../components/Gallery/Gallery";
-// import Chef from "../../components/Chef/Chef";
+import Chef from "../../components/Chef/Chef";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 
@@ -32,7 +32,7 @@ const Home = () => {
              <Testimonials/>
              <Reservation/>
              <Gallery/>
-{/*              <Chef/> */}
+             <Chef/>
              <Contact/>
              <Footer/>
            </main>

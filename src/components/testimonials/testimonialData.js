@@ -1,6 +1,6 @@
-import customer1 from "../../assets/images/testimonials/adaeze.png";
-import customer2 from "../../assets/images/testimonials/musa.png";
-import customer3 from "../../assets/images/testimonials/okafor.png";
+import customer1 from "../../assets/images/testimonials/adaeze.jpg";
+import customer2 from "../../assets/images/testimonials/musa.jpg";
+import customer3 from "../../assets/images/testimonials/okafor.jpg";
 
 const testimonialData = [
   {

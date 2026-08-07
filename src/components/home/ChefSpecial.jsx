@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaCheckCircle, FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-import specialImage from "../../assets/images/menu/chef-special.png";
+import specialImage from "../../assets/images/menu/chef-special.jpg";
 
 const ChefSpecial = () => {
   return (

@@ -1,7 +1,7 @@
 import FeaturedChef from "./FeaturedChef";
 import ChefCard from "./ChefCard";
 import chefData from "./chefData";
-
+import { motion, AnimatePresence } from "framer-motion";
 const featuredChef = chefData[0];
 const otherChef = chefData.slice(1);
 

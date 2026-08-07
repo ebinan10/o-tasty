@@ -1,8 +1,8 @@
-import jollof from "../assets/images/menu/jollof.png";
-import peppersoup from "../assets/images/menu/pepper-soup.png";
-import bangarice from "../assets/images/menu/native-rice.png";
-import coconut from "../assets/images/menu/coconut-rice.png";
-import banga from "../assets/images/menu/banga.png";
+import jollof from "../assets/images/menu/jollof.jpg";
+import peppersoup from "../assets/images/menu/pepper-soup.jpg";
+import bangarice from "../assets/images/menu/native-rice.jpg";
+import coconut from "../assets/images/menu/coconut-rice.jpg";
+import banga from "../assets/images/menu/banga.jpg";
 
 const featuredDishes = [
   {
