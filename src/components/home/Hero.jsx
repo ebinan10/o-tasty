@@ -7,7 +7,7 @@ import {
   FaUtensils,
 } from "react-icons/fa";
 
-import image from "../../assets/images/hero/hero-image.png";
+import image from "../../assets/images/hero/hero-image.webp";
 import FloatingCard from "../ui/FloatingCard";
 
 export default function Hero() {
