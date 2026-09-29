@@ -14,7 +14,7 @@ const FeaturedChef = ({ chef }) => {
       viewport={{ once: true }}
       transition={{ duration: .8 }}
       className="group relative overflow-hidden rounded-[35px]
-                 bg-[#171717] h-[130vh] lg:h-[70vh]
+                 bg-[#171717] h-[145vh] lg:h-[70vh]
                  border border-white/10
                  hover:border-orange-500/60
                  shadow-2xl flex flex-col justify-between"

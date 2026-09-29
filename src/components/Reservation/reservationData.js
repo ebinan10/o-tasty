@@ -5,9 +5,9 @@ const reservationInfo = {
   description:
     "Whether you're planning a romantic dinner, family gathering, birthday celebration, or business meeting, reserve your table and let Otasty create an exceptional dining experience for you.",
 
-  phone: "+234 802 591 3457",
+  phone: "+234 7033132382",
 
-  email: "reservations@otasty.com",
+  email: "otasty2026@gmail.com",
 
   address:
     "No 2 Scott road, Ogara Delta State Nigeria",

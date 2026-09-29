@@ -7,7 +7,7 @@ const contactData = {
 
   phone: "+234 7033132382",
 
-  email: "info@otasty.com",
+  email: "otasty2026@gmail.com",
 
   address:
     "No 2 Scott Road, Ogarefe Ogara, Delta State, Nigeria",
