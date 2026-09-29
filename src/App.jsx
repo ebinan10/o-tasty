@@ -2,10 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // Layout
 import Navbar from "./components/NavBar/Navbar";
-// import Footer from "./components/Footer/Footer";
-// import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
+import Footer from "./components/Footer/Footer";
 // Pages
+import ScrollProgress from "./components/ui/ScrollProgress";
+import BackToTop from "./components/ui/BackToTop";
 import Home from "./pages/Home/Home";
 // import Menu from "./pages/Menu";
 // import Gallery from "./pages/Gallery";
@@ -17,7 +18,7 @@ import Home from "./pages/Home/Home";
 function App() {
   return (
     <BrowserRouter>
-{/*       <ScrollToTop /> */}
+      <ScrollProgress />
 
       <Navbar />
 
@@ -29,9 +30,11 @@ function App() {
 {/*         <Route path="/reservation" element={<Reservation />} /> */}
 {/*         <Route path="/contact" element={<Contact />} /> */}
 {/*         <Route path="*" element={<NotFound />} /> */}
+
       </Routes>
 
-{/*       <Footer /> */}
+      <Footer />
+      <BackToTop/>
     </BrowserRouter>
   );
 }

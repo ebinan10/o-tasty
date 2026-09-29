@@ -14,10 +14,10 @@ const FeaturedChef = ({ chef }) => {
       viewport={{ once: true }}
       transition={{ duration: .8 }}
       className="group relative overflow-hidden rounded-[35px]
-                 bg-[#171717]
+                 bg-[#171717] h-[125vh] lg:h-[65vh]
                  border border-white/10
                  hover:border-orange-500/60
-                 shadow-2xl"
+                 shadow-2xl flex flex-col justify-between"
     >
       <div className="grid lg:grid-cols-2">
 
@@ -33,7 +33,7 @@ const FeaturedChef = ({ chef }) => {
 
           {/* Overlay */}
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          <div className="absolute  inset-0 bg-gradient-to-t from-black/60  via-transparent to-transparent" />
 
           {/* Position */}
 
@@ -45,9 +45,12 @@ const FeaturedChef = ({ chef }) => {
             bg-orange-500
             text-white
             px-6
+            w-40
+            h-10
+            flex items-center justify-center
             py-3
             rounded-full
-            font-semibold
+            font-bold
             shadow-xl
           "
           >
@@ -57,7 +60,9 @@ const FeaturedChef = ({ chef }) => {
 
         {/* CONTENT */}
 
-        <div className="flex flex-col justify-center p-10 lg:p-16">
+
+        <div className="w-full flex justify-center items-center  lg:h-[70vh] ">
+        <div className="w-[90%] flex flex-col justify-evenly h-[45vh] p-10 lg:p-16">
 
           <span className="uppercase tracking-[5px] text-orange-500">
             Meet Our Head Chef
@@ -117,19 +122,19 @@ const FeaturedChef = ({ chef }) => {
             {chef.bio}
           </p>
 
-          <div className="w-28 h-1 bg-orange-500 rounded-full mt-10" />
+          <div className="w-45 h-1 bg-orange-500 rounded-full mt-10" />
 
           <div className="flex gap-4 mt-10">
 
-            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 transition">
+            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 flex items-center justify-center transition">
               <FaFacebookF className="mx-auto text-white" />
             </button>
 
-            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 transition">
+            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 flex items-center justify-center transition">
               <FaInstagram className="mx-auto text-white" />
             </button>
 
-            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 transition">
+            <button className="w-12 h-12 rounded-full bg-white/10 hover:bg-orange-500 flex items-center justify-center transition">
               <FaXTwitter className="mx-auto text-white" />
             </button>
 
@@ -149,11 +154,11 @@ const FeaturedChef = ({ chef }) => {
             transition
           "
           >
-            Meet Chef Emeka
+
           </button>
 
         </div>
-
+        </div>
       </div>
     </motion.div>
   );

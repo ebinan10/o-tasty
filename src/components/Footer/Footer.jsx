@@ -184,12 +184,6 @@ const Footer = () => {
             © {new Date().getFullYear()} Otasty Restaurant & Bar. All Rights Reserved.
           </p>
 
-          <button
-            onClick={scrollTop}
-            className="w-14 h-14 rounded-full bg-orange-500 hover:bg-orange-600 transition flex items-center justify-center text-white"
-          >
-            <FaArrowUp />
-          </button>
 
         </div>
 

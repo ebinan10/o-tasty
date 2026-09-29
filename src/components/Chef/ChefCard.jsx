@@ -14,7 +14,7 @@ const ChefCard = ({ chef, index }) => {
       viewport={{ once: true }}
       transition={{ delay: index * .15 }}
       whileHover={{ y: -12 }}
-      className="group rounded-[30px] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
+      className="group rounded-[30px] h-[85vh] lg:h-[75vh] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
     >
       {/* Image */}
 
@@ -28,7 +28,10 @@ const ChefCard = ({ chef, index }) => {
 
         {/* Position */}
 
-        <span className="absolute top-5 left-5 bg-orange-500 text-white text-sm font-semibold px-5 py-2 rounded-full shadow-lg">
+        <span className="absolute top-5 left-5
+            w-30
+            h-10
+            flex items-center justify-center bg-orange-500 text-white text-sm font-bold px-5 py-2 rounded-full shadow-lg">
           {chef.position}
         </span>
 
@@ -54,7 +57,8 @@ const ChefCard = ({ chef, index }) => {
 
       {/* Content */}
 
-      <div className="p-7">
+      <div className="w-full flex justify-center h-[40vh] items-center flex-row">
+      <div className="p-7 w-[90%] h-[30vh]">
 
         <h3 className="text-2xl font-bold text-white">
           {chef.name}
@@ -85,7 +89,7 @@ const ChefCard = ({ chef, index }) => {
           <span>→</span>
         </button>
 
-      </div>
+      </div></div>
 
     </motion.div>
   );

@@ -83,6 +83,7 @@ const Gallery = () => {
                   prevImage={prevImage}
                 />
       </div>
+      <div className="h-[10vh]"></div>
     </section>
   );
 };

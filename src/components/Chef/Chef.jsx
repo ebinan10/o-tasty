@@ -7,8 +7,9 @@ const otherChef = chefData.slice(1);
 
 const Chef = () => {
   return (
-    <section className="relative py-28 overflow-hidden bg-[#0D0D0D]">
-
+    <section className="relative py-28 w-full  flex flex-row justify-center overflow-hidden bg-[#0D0D0D]">
+        <div className="h-[20vh]"></div>
+        <div className="max-w-7xl w-[90%] mx-auto px-6 lg:px-10">
        <FeaturedChef chef={featuredChef} />
 
       {/* Background Glow */}
@@ -26,7 +27,7 @@ const Chef = () => {
           transition={{ duration: .8 }}
           className="text-center mb-20"
         >
-
+        <div className=" h-[10vh]  mx-auto mt-8" />
           <span className="uppercase tracking-[5px] text-orange-500 font-semibold">
             Culinary Experts
           </span>
@@ -35,18 +36,17 @@ const Chef = () => {
             Meet Our Professional Chefs
           </h2>
 
-          <p className="text-gray-400 max-w-3xl mx-auto mt-8 leading-8">
+          <p className="text-gray-400 text-center max-w-3xl mx-auto mt-8 leading-8">
             Passionate professionals dedicated to bringing authentic Nigerian
             flavours to your table through creativity, excellence, and years of
             culinary experience.
           </p>
 
-          <div className="w-28 h-1 rounded-full bg-orange-500 mx-auto mt-8" />
-          <div className="w-12 h-1 rounded-full bg-white mx-auto mt-3" />
+           <div className=" h-[10vh]  mx-auto mt-8" />
 
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-8 mt-16">
           {otherChef.map((chef, index) => (
               <ChefCard
                 key={chef.id}
@@ -56,6 +56,8 @@ const Chef = () => {
             ))}
 
         </div>
+
+      </div>
 
       </div>
 

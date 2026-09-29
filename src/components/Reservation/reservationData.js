@@ -10,7 +10,7 @@ const reservationInfo = {
   email: "reservations@otasty.com",
 
   address:
-    "152 Ikorodu Road, Agric Bus Stop, Lagos, Nigeria",
+    "No 2 Scott road, Ogara Delta State Nigeria",
 
   openingHours: [
     {

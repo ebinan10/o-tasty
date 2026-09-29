@@ -20,7 +20,7 @@ const ContactInfo = ({ data }) => {
 
       <div className="w-full bg-[#171717] rounded-3xl p-7 border border-white/10 hover:border-orange-500 transition">
 
-        <div className="w-[90%] flex h-[90px] w-full items-center justify-center  gap-5">
+        <div className="w-[90%] flex h-[140px] w-full items-center justify-center  gap-5">
             <div className="w-[90%] flex justify-between gap-5">
           <div className="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center">
             <FaLocationDot className="text-white text-xl" />

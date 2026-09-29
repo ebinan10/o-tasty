@@ -34,7 +34,6 @@ const Home = () => {
              <Gallery/>
              <Chef/>
              <Contact/>
-             <Footer/>
            </main>
     </>
   );
