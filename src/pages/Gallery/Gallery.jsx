@@ -1,11 +1,12 @@
 import Gallery from "../../components/Gallery/Gallery";
 
-const Gallery = () => {
+const GalleryPage = () => {
   return (
     <div className="min-h-screen">
+        <div className="h-[10vh]"/>
       <Gallery/>
     </div>
   );
 };
 
-export default Gallery;
+export default GalleryPage;

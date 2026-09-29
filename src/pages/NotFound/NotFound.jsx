@@ -1,9 +1,9 @@
-const Blog = () => {
+const NotFound = () => {
   return (
     <div className="min-h-screen">
-      Blog
+      NotFound
     </div>
   );
 };
 
-export default Blog;
+export default NotFound;

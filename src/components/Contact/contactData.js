@@ -5,12 +5,12 @@ const contactData = {
   description:
     "Whether you have a question, want to reserve a table, or are planning a private event, our team is always ready to assist you.",
 
-  phone: "+234 802 591 3457",
+  phone: "+234 7033132382",
 
   email: "info@otasty.com",
 
   address:
-    "152 Ikorodu Road, Agric Bus Stop, Lagos, Nigeria",
+    "No 2 Scott Road, Ogarefe Ogara, Delta State, Nigeria",
 
   openingHours: [
     {

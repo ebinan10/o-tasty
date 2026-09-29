@@ -58,7 +58,7 @@ const Chef = () => {
         </div>
 
       </div>
-
+        <div className="h-[7vh]"/>
       </div>
 
     </section>
