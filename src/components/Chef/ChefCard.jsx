@@ -14,7 +14,7 @@ const ChefCard = ({ chef, index }) => {
       viewport={{ once: true }}
       transition={{ delay: index * .15 }}
       whileHover={{ y: -12 }}
-      className="group rounded-[30px] h-[85vh] lg:h-[105vh] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
+      className="group rounded-[30px] h-[85vh] lg:h-[95vh] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
     >
       {/* Image */}
 
@@ -39,15 +39,15 @@ const ChefCard = ({ chef, index }) => {
 
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 opacity-0 group-hover:opacity-100 transition duration-500">
 
-          <button className="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
+          <button className="w-11 h-11 flex justify-center items-center rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
             <FaFacebookF />
           </button>
 
-          <button className="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
+          <button className="w-11 h-11 flex justify-center items-center rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
             <FaInstagram />
           </button>
 
-          <button className="w-11 h-11 rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
+          <button className="w-11 h-11 flex justify-center items-center rounded-full bg-white/10 backdrop-blur-md hover:bg-orange-500 text-white transition">
             <FaXTwitter />
           </button>
 
@@ -57,8 +57,8 @@ const ChefCard = ({ chef, index }) => {
 
       {/* Content */}
 
-      <div className="w-full flex justify-center h-[40vh] items-center flex-row">
-      <div className="p-7 w-[90%] h-[30vh]">
+      <div className="w-full flex justify-center h-[55vh] items-center flex-row">
+      <div className="p-7 w-[90%] h-[40vh]">
 
         <h3 className="text-2xl font-bold text-white">
           {chef.name}

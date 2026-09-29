@@ -14,7 +14,7 @@ const FeaturedChef = ({ chef }) => {
       viewport={{ once: true }}
       transition={{ duration: .8 }}
       className="group relative overflow-hidden rounded-[35px]
-                 bg-[#171717] h-[125vh] lg:h-[65vh]
+                 bg-[#171717] h-[145vh] lg:h-[70vh]
                  border border-white/10
                  hover:border-orange-500/60
                  shadow-2xl flex flex-col justify-between"
@@ -61,8 +61,8 @@ const FeaturedChef = ({ chef }) => {
         {/* CONTENT */}
 
 
-        <div className="w-full flex justify-center items-center  lg:h-[70vh] ">
-        <div className="w-[90%] flex flex-col justify-evenly h-[45vh] p-10 lg:p-16">
+        <div className="w-full flex justify-center items-center  lg:h-[65vh] h-[65vh] ">
+        <div className="w-[90%] flex flex-col justify-evenly lg:h-[55vh] h-[45vh] p-10 lg:p-16">
 
           <span className="uppercase tracking-[5px] text-orange-500">
             Meet Our Head Chef
