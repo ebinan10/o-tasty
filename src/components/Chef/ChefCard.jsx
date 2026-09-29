@@ -14,7 +14,7 @@ const ChefCard = ({ chef, index }) => {
       viewport={{ once: true }}
       transition={{ delay: index * .15 }}
       whileHover={{ y: -12 }}
-      className="group rounded-[30px] h-[85vh] lg:h-[95vh] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
+      className="group rounded-[30px] h-[85vh] lg:h-[125vh] overflow-hidden bg-[#171717] border border-white/10 hover:border-orange-500/60 transition-all duration-500 shadow-xl"
     >
       {/* Image */}
 
