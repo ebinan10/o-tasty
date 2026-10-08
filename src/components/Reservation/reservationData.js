@@ -10,7 +10,7 @@ const reservationInfo = {
   email: "otasty2026@gmail.com",
 
   address:
-    "No 2 Scott road, Ogara Delta State Nigeria",
+    "No 2 Scott road, Ogarefe Ogara Delta State Nigeria",
 
   openingHours: [
     {

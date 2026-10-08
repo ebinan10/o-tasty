@@ -13,7 +13,7 @@ const popularMeals = [
     id: 2,
     name: "Egusi Soup & Pounded Yam",
     category: "Soups & Swallows",
-    price: "₦6,000",
+    price: "₦4,200",
     rating: 4.8,
     image: "/images/meals/egusi.jpg",
     description:

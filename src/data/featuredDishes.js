@@ -9,7 +9,7 @@ const featuredDishes = [
     id: 1,
     name: "Smoky Jollof Rice",
     image: jollof,
-    price: "₦2,500",
+    price: "₦7,600",
     category: "Best Seller",
     rating: 4.9,
     description: "Served with grilled chicken and fried plantain."
@@ -18,7 +18,7 @@ const featuredDishes = [
     id: 2,
     name: "Goat Pepper Soup",
     image: peppersoup,
-    price: "₦4,000",
+    price: "₦5,000",
     category: "Hot & Spicy",
     rating: 4.8,
     description: "Traditional spicy soup prepared with fresh herbs."
@@ -27,7 +27,7 @@ const featuredDishes = [
     id: 3,
     name: "Concortion rice",
     image: bangarice,
-    price: "₦2,000",
+    price: "₦3,600",
     category: "Chef Special",
     rating: 5.0,
     description: "Deliciously cooked banga is ready to pair with Starch or Fufu."
@@ -36,7 +36,7 @@ const featuredDishes = [
     id: 4,
     name: "Coconut rice",
     image: coconut,
-    price: "₦2,500",
+    price: "₦5,100",
     category: "Popular",
     rating: 4.9,
     description: "Tender beef seasoned with authentic northern spices."
@@ -45,7 +45,7 @@ const featuredDishes = [
       id: 5,
       name: "Banga Soup",
       image: banga,
-      price: "₦3,000",
+      price: "₦4,800",
       category: "Popular",
       rating: 4.9,
       description: "Tender beef seasoned with authentic northern spices."

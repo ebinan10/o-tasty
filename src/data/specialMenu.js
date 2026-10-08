@@ -17,7 +17,7 @@ const specialMenu = [
     name: "Smoky Party Jollof Rice",
     category: "Rice",
     image: jollof,
-    price: "₦4,500",
+    price: "₦7,600",
     rating: 4.9,
     description:
       "Classic smoky Nigerian jollof rice served with grilled chicken.",
@@ -27,7 +27,7 @@ const specialMenu = [
     name: "Native Rice",
     category: "Rice",
     image: nativeRice,
-    price: "₦4,800",
+    price: "₦3,600",
     rating: 4.9,
     description:
       "Traditional native rice prepared with palm oil and assorted meat.",
@@ -37,7 +37,7 @@ const specialMenu = [
     name: "Coconut Rice",
     category: "Rice",
     image: coconutRice,
-    price: "₦5,000",
+    price: "₦7,600",
     rating: 5.0,
     description:
       "Creamy coconut rice served with crispy fried turkey.",
@@ -47,7 +47,7 @@ const specialMenu = [
     name: "Concoction Rice",
     category: "Rice",
     image: concoctionRice,
-    price: "₦4,700",
+    price: "₦3,600",
     rating: 4.8,
     description:
       "Traditional palm-oil rice cooked with aromatic local spices.",
@@ -57,7 +57,7 @@ const specialMenu = [
     name: "Banga Rice",
     category: "Rice",
     image: bangaRice,
-    price: "₦5,200",
+    price: "₦3,600",
     rating: 4.9,
     description:
       "Flavorful rice cooked with fresh palm fruit extract.",
@@ -67,7 +67,7 @@ const specialMenu = [
     name: "Goat Meat Pepper Soup",
     category: "Soup",
     image: pepperSoup,
-    price: "₦4,000",
+    price: "₦5,000",
     rating: 4.9,
     description:
       "Hot spicy pepper soup with tender assorted goat meat.",
@@ -77,7 +77,7 @@ const specialMenu = [
     name: "Banga Soup",
     category: "Soup",
     image: bangaSoup,
-    price: "₦5,000",
+    price: "₦4,000",
     rating: 5.0,
     description:
       "Fresh catfish cooked in rich palm fruit soup.",
@@ -87,7 +87,7 @@ const specialMenu = [
     name: "Egusi & Pounded Yam",
     category: "Soup",
     image: egusi,
-    price: "₦5,500",
+    price: "₦4,200",
     rating: 5.0,
     description:
       "Rich melon soup served with soft pounded yam.",
@@ -97,7 +97,7 @@ const specialMenu = [
     name: "Grilled Croaker",
     category: "Grill",
     image: grilledFish,
-    price: "₦7,500",
+    price: "₦8,500",
     rating: 5.0,
     description:
       "Whole grilled croaker with spicy pepper sauce.",
@@ -107,7 +107,7 @@ const specialMenu = [
     name: "Asun",
     category: "Grill",
     image: asun,
-    price: "₦4,500",
+    price: "₦7,500",
     rating: 4.8,
     description:
       "Spicy grilled goat meat tossed in fresh peppers.",
@@ -127,7 +127,7 @@ const specialMenu = [
     name: "Chapman",
     category: "Drink",
     image: chapman,
-    price: "₦2,000",
+    price: "₦3,000",
     rating: 5.0,
     description:
       "Refreshing classic Nigerian chapman with fresh fruits.",
